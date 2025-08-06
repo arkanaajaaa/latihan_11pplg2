@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:latihan_11pplg2/reusable_textfield.dart'; 
+import 'package:latihan_11pplg2/components/reusable_textfield.dart'; 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
 

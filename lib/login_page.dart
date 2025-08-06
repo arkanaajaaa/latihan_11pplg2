@@ -21,14 +21,9 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              
-              Image.asset(
-                'assets/logo.jpg', 
-                height: 150,
-              ),
+              Image.asset('assets/logo.jpg', height: 150),
               const SizedBox(height: 48.0),
 
-              
               TextField(
                 controller: _usernameController,
                 decoration: InputDecoration(
@@ -41,10 +36,9 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 16.0),
 
-              
               TextField(
                 controller: _passwordController,
-                obscureText: true, 
+                obscureText: true,
                 decoration: InputDecoration(
                   labelText: 'Password',
                   border: OutlineInputBorder(
@@ -55,14 +49,14 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 24.0),
 
-              
               ElevatedButton(
                 onPressed: () {
-                  
+
                   print('Username: ${_usernameController.text}');
                   print('Password: ${_passwordController.text}');
                   
                 },
+
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 50,
@@ -76,19 +70,14 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 16.0),
 
-              
               TextButton(
                 onPressed: () {
+                  print('Register clicked');
+                  Navigator.pushNamed(context, '/register');
                 },
-                child: const Text('Lupa Password?'),
+                child: const Text('Belum punya akun? Daftar sekarang'),
               ),
-              TextButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/register');
-              },
-              child: const Text('Belum punya akun? Daftar sekarang'),
-              ),
-              ],
+            ],
           ),
         ),
       ),

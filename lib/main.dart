@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_11pplg2/login_page.dart';
-import 'package:latihan_11pplg2/register_page.dart'; void main() {
-  
+import 'package:latihan_11pplg2/login_page.dart'; // Pastikan path ini benar
+import 'package:latihan_11pplg2/calculator_page.dart'; // Ini yang penting untuk diimpor
+import 'package:latihan_11pplg2/register_page.dart'; // Pastikan path ini benar
+
+void main() {
   runApp(const MyApp());
 }
 
@@ -16,11 +18,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const LoginPage(),
-        '/register': (context) => RegisterPage(),
-      },
+      // Mengatur CalculatorPage sebagai halaman utama yang muncul pertama kali
+      home: CalculatorPage(),
     );
   }
 }
