@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "87360473575",
+    "project_id": "flutter-ark",
+    "storage_bucket": "flutter-ark.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87360473575:android:a7359bc42c1753ea8b1542",
+        "android_client_info": {
+          "package_name": "com.example.latihan_11pplg2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnOkk4jaLIwV95GD_KEQGIY7gO54IE_kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'flutter',
+      title: 'Flutter Login API Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -25,14 +25,14 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      // ✅ Routing GetX
-      initialRoute: AppRoutes.bottomNavPage,
+      // ✅ Initial Route ke Login API
+      initialRoute: AppRoutes.loginAPI,
       getPages: AppPages.pages,
 
-      // ✅ Optional enhancements
+      // ✅ Transitions
       defaultTransition: Transition.fade,
       transitionDuration: const Duration(milliseconds: 300),
-      popGesture: true, // Geser untuk back di iOS
+      popGesture: true,
     );
   }
 }

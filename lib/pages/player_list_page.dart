@@ -12,21 +12,21 @@ class PlayerListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Tampilkan snackbar setelah build selesai
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      final args = Get.arguments;
-      if (args != null && args['fromCalculator'] == true) {
-        Get.snackbar(
-          'Sukses',
-          'Kamu tiba di halaman Football Players!',
-          snackPosition: SnackPosition.TOP,
-          backgroundColor: Colors.green[700],
-          colorText: Colors.white,
-          duration: const Duration(seconds: 2),
-          margin: const EdgeInsets.all(12),
-          borderRadius: 12,
-        );
-      }
-    });
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   final args = Get.arguments;
+    //   if (args != null && args['fromCalculator'] == true) {
+    //     Get.snackbar(
+    //       'Sukses',
+    //       'Kamu tiba di halaman Football Players!',
+    //       snackPosition: SnackPosition.TOP,
+    //       backgroundColor: Colors.green[700],
+    //       colorText: Colors.white,
+    //       duration: const Duration(seconds: 2),
+    //       margin: const EdgeInsets.all(12),
+    //       borderRadius: 12,
+    //     );
+    //   }
+    // });
 
     return Scaffold(
       appBar: AppBar(
